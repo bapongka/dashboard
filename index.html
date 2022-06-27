@@ -10,44 +10,110 @@
   </head>
   <body>
     <div class="flex">
-      <aside class="bg-secondary h-screen p-10 w-64 text-primary text-center">
-        <h1>LOGO DASHBOARD</h1>
-        <div class="mt-10">
-          <div class="py-2">
-            <a href="#" class="flex">
+      <!-- SIDEBAR -->
+      <aside class="bg-secondary h-screen w-72 text-primary">
+        <h1 class="font-bold p-10 pb-0">LOGO DASHBOARD</h1>
+        <div class="mt-10 ml-2">
+          <button class="flex w-full py-4 px-10 focus:bg-light focus:text-secondary focus:border-l-8 focus:border-primary transition duration-300 ease-in-out">
+            <a href="#" class="flex hover:ml-4">
               <span class="material-symbols-outlined"> dashboard </span>
               <h3 class="ml-3">Dahsboard</h3>
             </a>
-          </div>
-          <div class="py-1">
-            <a href="#" class="flex">
+          </button>
+
+          <button class="flex w-full py-4 px-10 focus:bg-light focus:text-secondary focus:border-l-8 focus:border-primary transition duration-300 ease-in-out">
+            <a href="#" class="flex hover:ml-4">
               <span class="material-symbols-outlined"> person </span>
               <h3 class="ml-3">Customer</h3>
             </a>
-          </div>
-          <div class="py-2">
-            <a href="#" class="flex">
+          </button>
+
+          <button class="flex w-full py-4 px-10 focus:bg-light focus:text-secondary focus:border-l-8 focus:border-primary transition duration-300 ease-in-out">
+            <a href="#" class="flex hover:ml-4">
               <span class="material-symbols-outlined"> inventory_2 </span>
               <h3 class="ml-3">Product</h3>
             </a>
-          </div>
-          <div class="py-2">
-            <a href="#" class="flex">
+          </button>
+
+          <button class="flex w-full py-4 px-10 focus:bg-light focus:text-secondary focus:border-l-8 focus:border-primary transition duration-300 ease-in-out">
+            <a href="#" class="flex hover:ml-4">
               <span class="material-symbols-outlined"> inventory </span>
               <h3 class="ml-3">Report</h3>
             </a>
-          </div>
-          <div class="py-2">
-            <a href="#" class="flex">
+          </button>
+
+          <button class="flex w-full py-4 px-10 focus:bg-light focus:text-secondary focus:border-l-8 focus:border-primary transition duration-300 ease-in-out">
+            <a href="#" class="flex hover:ml-4">
               <span class="material-symbols-outlined"> mail </span>
-              <h3 class="ml-3">Message <span class="bg-primary text-secondary px-2 py-0.5 ml-2 rounded-md">38</span></h3>
+              <h3 class="ml-3">Message <span class="bg-primary text-black text-sm px-2 rounded-md ml-2">38</span></h3>
             </a>
-          </div>
+          </button>
         </div>
       </aside>
-      <div class="bg-primary">
-        <h1 class="p-10">Dahsboard Page</h1>
-      </div>
+      <!-- SIDEBAR END -->
+
+      <main class="bg-light w-full">
+        <h1 class="p-10 font-bold text-xl">Dahsboard</h1>
+        <div class="flex">
+          <div class="bg-secondary text-primary p-5 ml-10 mr-5 w-72 rounded-xl shadow-lg shadow-secondary hover:shadow-none">
+            <div class="border border-primary rounded-full flex h-10 w-10 items-center justify-center">
+              <span class="material-symbols-outlined"> analytics </span>
+            </div>
+            <div class="flex one pt-5">
+              <div class="w-6/12">
+                <h3 class="font-medium">Total Sales</h3>
+                <h1 class="text-xl font-semibold pt-5">$25,500</h1>
+              </div>
+              <div class="relative w-6/12">
+                <svg class="w-full h-28">
+                  <circle cx="58" cy="50" r="36" fill="#2dd4bf"></circle>
+                </svg>
+                <p class="absolute flex top-0 left-0 w-full h-full justify-center items-center">81%</p>
+              </div>
+            </div>
+            <p>Last 24 Hours</p>
+          </div>
+          <div class="bg-secondary text-primary p-5 mx-5 w-72 rounded-xl shadow-lg shadow-secondary hover:shadow-none">
+            <div class="border border-primary rounded-full flex h-10 w-10 items-center justify-center">
+              <span class="material-symbols-outlined"> bar_chart </span>
+            </div>
+            <div class="flex two pt-5">
+              <div class="w-6/12">
+                <h3 class="font-medium">Total Expenses</h3>
+                <h1 class="text-xl font-semibold pt-5">$14,500</h1>
+              </div>
+              <div class="relative w-6/12">
+                <svg class="w-28 h-28">
+                  <circle cx="58" cy="50" r="36" fill="#2dd4bf"></circle>
+                </svg>
+                <p class="absolute flex top-0 left-0 w-full h-full justify-center items-center">62%</p>
+              </div>
+            </div>
+            <p>Last 24 Hours</p>
+          </div>
+          <div class="bg-secondary text-primary p-5 mx-5 w-72 rounded-xl shadow-lg shadow-secondary hover:shadow-none">
+            <div class="border border-primary rounded-full flex h-10 w-10 items-center justify-center">
+              <span class="material-symbols-outlined"> monitoring </span>
+            </div>
+            <div class="flex three pt-5">
+              <div class="w-6/12">
+                <h3 class="font-medium">Total Income</h3>
+                <h1 class="text-xl font-semibold pt-5">$10,500</h1>
+              </div>
+              <div class="relative w-6/12">
+                <svg class="w-28 h-28">
+                  <circle cx="58" cy="50" r="36" fill="#2dd4bf"></circle>
+                </svg>
+                <p class="absolute flex top-0 left-0 w-full h-full justify-center items-center">44%</p>
+              </div>
+            </div>
+            <p>Last 24 Hours</p>
+          </div>
+        </div>
+
+        <h1 class="p-10 font-bold text-xl">Analytics</h1>
+        <div class="bg-secondary text-primary ml-10 p-5 w-6/12 rounded-xl">test</div>
+      </main>
     </div>
   </body>
 </html>

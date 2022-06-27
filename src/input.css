@@ -5,3 +5,28 @@
 body {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
+
+main svg circle {
+  fill: none;
+  stroke: #2dd4bf;
+  stroke-width: 14;
+  stroke-linecap: round;
+  transform: translate(5px, 5px);
+  /* stroke-dasharray: 110;
+  stroke-dashoffset: 92; */
+}
+
+main .one svg circle {
+  stroke-dasharray: 200;
+  stroke-dashoffset: -30;
+}
+
+main .two svg circle {
+  stroke-dasharray: 80;
+  stroke-dashoffset: 20;
+}
+
+main .three svg circle {
+  stroke-dasharray: 110;
+  stroke-dashoffset: 35;
+}
